@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King and Pigs</title>
+    <link rel="shortcut icon" href="asset/01-King Human/Ground (78x58).png" type="image/x-icon">
+    <link rel="stylesheet" href="game-layout.css">
+    <script src="LAB.min.js"></script>
+</head>
+<body>
+    <div id="gameArea">
+        <canvas id="mycanvas">
+            Browser don't support HTML Canvas.
+        </canvas>
+    </div>
+    <script>
+        $LAB.script("geom/Vector2.js").wait()
+        .script("asset/collisions.js").wait()
+        .script("asset/utils.js").wait()
+        .script("asset/level.js").wait()
+        .script("geom/Rectangle.js").wait()
+        .script("system/Keys.js").wait()
+        .script("system/Colors.js").wait()
+        .script("Canvas2D.js").wait()
+        .script("input/ButtonState.js").wait()
+        .script("input/Keyboard.js").wait()
+        .script("input/touch.js").wait()
+        .script("input/Mouse.js").wait()
+        .script("IGameLoopObject.js").wait()
+        .script("gameObjects/gameObject.js").wait()
+        .script("gameObjects/gameObjectList.js").wait()
+        .script("gameObjects/gameObjectGrid.js").wait()
+        .script("gameObjects/spriteGameObject.js").wait()
+        .script("Animation.js").wait()
+        .script("gameObjects/AnimatedGameObject.js").wait()
+        .script("gameObjectEls/tileField.js").wait()
+        .script("gameObjectEls/tile.js").wait()
+        .script("gameObjectEls/Enemy.js").wait()
+        .script("gameObjectEls/Player.js").wait()
+        .script("gameObjectEls/Door.js").wait()
+        .script("Level/level.js").wait()
+        .script("states/PlayingState.js").wait()
+        .script("gui/comp/Label.js").wait()
+        .script("gui/comp/Button.js").wait()
+        .script("gui/LevelButton.js").wait()
+        .script("states/LevelMenuState.js").wait()
+        .script("states/TitleMenuState.js").wait()
+        .script("GameStateManager.js").wait()
+        .script("Game.js").wait()
+        .script("sound.js").wait()
+        .script("spriteSheet.js").wait()
+        .script("kingandpig.js").wait(function(){
+            game.start(1440,825,"mycanvas","gameArea");
+        })
+    </script>
+</body>
+</html>
